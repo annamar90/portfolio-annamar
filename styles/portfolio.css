@@ -1,6 +1,5 @@
 :root {
-    --branding-color: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
-
+    --branding-color: radial-gradient(circle at 10% 20%, rgb(0, 107, 141) 0%, rgb(0, 69, 91) 90%);
     --secondary-color: radial-gradient(circle at 10% 20%, rgb(254, 255, 165) 0%, rgb(255, 232, 182) 90%);
 
     --heading-font-family: 'Playfair Display', serif;
@@ -26,7 +25,7 @@ h1 {
 }
 
 h2 {
-    font-size: 64px;
+    font-size: 54px;
 }
 
 p {
@@ -36,9 +35,10 @@ p {
 }
 
 .hero {
-    background: var(--secondary-color);
+    background-image: url("../images/waterlily.jpeg");
     text-align: center;
     padding: 160px 20px;
+
 }
 
 .hero p {
@@ -46,7 +46,7 @@ p {
     font-size: 36px;
     font-weight: bold;
     margin: 0;
-    color: #272142;
+    color: black;
 }
 
 .hero h2 {
@@ -57,17 +57,28 @@ p {
 }
 
 .content-container {
-    padding: 160px 20px;
+    padding: 70px 20px;
 }
 
-.content-container h1 {
+.content h1 {
     font-size: 64px;
     line-height: 80px;
 }
 
-.content-container h2 {
+.content h2 {
     font-size: 18px;
     font-family: var(--default-font-family);
+}
+
+.content h3 {
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 20px 0 0;
+    font-family: var(--default-font-family);
+}
+
+.content p {
+    font-size: 14px; 
 }
 
 .content {
@@ -75,28 +86,32 @@ p {
 }
 
 .btn-branding {
-    background: var(--branding-color);
+    background-color: #212529;
     border-radius: 4px;
     color: white;
     font-size: 18px;
     line-height: 27px;
-    padding: 15px 30px;
+    padding: 10px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 80%;
 }
 
 .btn-branding:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     color: white;
 }
 
 .btn-branding-outline {
-    color:white;
+    color: white;
     border: 1px solid var(--branding-color);
     background: var(--branding-color);
     border-radius: 4px;
     font-size: 18px;
     line-height: 27px;
     padding: 15px 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition-duration: 0.4s;
+    margin-bottom: 20px;
 }
 
 .btn-branding-outline:hover {
@@ -105,7 +120,7 @@ p {
 }
 
 .project-description {
-    padding: 120px 60px;
+    padding: 0px 60px;
 }
 
 @media (max-width:900px) {
@@ -122,7 +137,7 @@ p {
         padding: 80px 20px;
     }
 
-    .about-section {
+    .content {
         text-align: center;
         padding: 0;
     }
@@ -133,8 +148,6 @@ p {
     }
 }
 
-
-
 .navbar {
     position: fixed;
     display: flex;
@@ -142,5 +155,29 @@ p {
     justify-content: space-between;
     padding-top: .5rem;
     padding-bottom: .5rem;
+}
+
+.img-index {
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0;
+  
+}
+
+.img-about {
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 450px;
+    margin-top: 60px;
+}
+
+
+.invite-text-index {
+    color: black;
+    font-family: var(--default-font-family);
+    font-weight: bold;
+    font-size: 22px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 
 }
