@@ -3,6 +3,9 @@
 
     --heading-font-family: 'Hahmlet', serif;
     --default-font-family: 'Poppins', sans-serif;
+
+    --drop-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    --text-color: #45474b;
 }
 
 
@@ -162,7 +165,7 @@ p {
     }
 
     footer .contact-box-text {
-        display:none;
+        display: none;
     }
 }
 
@@ -171,7 +174,7 @@ p {
     footer .contact-box {
         background-color: rgb(0, 69, 91);
         padding: 30px 120px;
-        border-radius: 10px;  
+        border-radius: 10px;
     }
 }
 
@@ -192,21 +195,14 @@ p {
 }
 
 .img-about {
-    border-radius: 20px;
+    border-radius: 50px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 450px;
     margin-top: 60px;
 }
 
 
-.invite-text-index {
-    color: black;
-    font-family: var(--default-font-family);
-    font-weight: bold;
-    font-size: 22px;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
+
 
 .contact-text {
     font-family: var(--heading-font-family);
@@ -239,10 +235,9 @@ footer .social-links a:hover {
     border: 1px solid rgb(0, 69, 91);
 }
 
-footer .social-links{
+footer .social-links {
     padding-top: 30px;
 }
-
 
 
 footer .contact-box p {
@@ -259,5 +254,58 @@ footer {
 
 
 .contact-box-text {
-    padding-top:15px;
+    padding-top: 15px;
+}
+
+
+.shadowBox {
+    margin-bottom: 80px;
+    margin-top: 80px;
+    padding: 0;
+
+    box-shadow: var(--drop-shadow);
+    border-radius: 7px;
+    width: 100%;
+}
+
+.skillsrow {
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.skillscol {
+    padding: 5px;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: var(--drop-shadow);
+    max-width: 50%;
+    margin: 10px auto;
+    min-width: 6em;
+}
+
+.skillstext {
+    font-size: 16px;
+    margin-bottom: 0px;
+    color: var(--text-color);
+}
+
+.workimg {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.signature {
+    font-size: 12px;
+    font-family: var(--default-font-family);
+}
+
+.worktext {
+    font-family: var(--default-font-family);
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 2;
+}
+
+.textupdate {
+    font-family: var(--default-font-family);
+    color: rgb(0, 107, 141);
 }
